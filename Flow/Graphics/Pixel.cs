@@ -24,4 +24,10 @@ public class Pixel {
         this.BG = new RGB(0, 0, 0);
         this.FG = new RGB(0, 0, 0);
     }
+
+    public Pixel() {
+        this.character = ' ';
+        this.BG = new RGB(0, 0, 0);
+        this.FG = new RGB(0, 0, 0);
+    }
 }

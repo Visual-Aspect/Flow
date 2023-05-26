@@ -12,4 +12,10 @@ public class RGB {
         G = g;
         B = b;
     }
+
+    public string ToString(bool fg = false) {
+        return $"\x1b[{(fg ? "38" : "48")};2;{R};{G};{B}m";
+    }
+
+    public override string ToString() => ToString();
 }

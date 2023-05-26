@@ -11,6 +11,13 @@ public class PixelMap {
         Width = width;
         Height = height;
         Pixels = new Pixel[width, height];
+        this.Clear();
+    }
+
+    public void Clear() {
+        for (int y = 0; y < Height; y++)
+            for (int x = 0; x < Width; x++)
+                Pixels[x, y] = new Pixel();
     }
 
     public void SetPixel(int x, int y, Pixel pixel) => Pixels[x, y] = pixel;
